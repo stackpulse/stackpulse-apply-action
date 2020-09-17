@@ -1,0 +1,28 @@
+name: "StackPulse Apply Action"
+branding:
+  icon: "upload-cloud"
+  color: "green"
+description: "Apply StackPulse playbooks and triggers using a StackPulse CLI based Github action"
+inputs:
+    clientId:
+      description: "Your StackPulse API Client ID"
+    clientSecret:
+      description: "Your StackPulse API Client Secret"
+    yamlFile:
+        description: "Path to the yaml file of the playbook or trigger to apply"
+        required: true
+    yamlType:
+        description: "Type of yaml resource to apply, 'playbook' or 'trigger' (default is 'playbook')"
+        required: true
+        default: playbook
+runs:
+  using: "docker"
+  image: "docker://us-docker.pkg.dev/stackpulse/public/cli"
+  env:
+    SP_CLIENT_ID: ${{ inputs.clientId }}
+    SP_CLIENT_SECRET: ${{ inputs.clientSecret }}
+  args:
+    - "apply"
+    - ${{ inputs.yamlType }}
+    - "-f"
+    - ${{ inputs.yamlFile }}
