@@ -1,0 +1,33 @@
+name: ci
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  apply-playbook:
+    name: Test the action on apply playbook
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./
+        name: Apply playbook
+        with:
+          clientId: ${{ secrets.STACKPULSE_CLIENT_ID }}
+          clientSecret: ${{ secrets.STACKPULSE_CLIENT_SECRET }}
+          yamlFile: test/playbook.yaml
+          
+  apply-trigger:
+    name: Test the action on apply trigger
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./
+        name: Apply trigger
+        with:
+          clientId: ${{ secrets.STACKPULSE_CLIENT_ID }}
+          clientSecret: ${{ secrets.STACKPULSE_CLIENT_SECRET }}
+          yamlFile: test/trigger.yaml
+          yamlType: trigger
