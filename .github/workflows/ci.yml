@@ -8,7 +8,7 @@ on:
 
 jobs:
   apply-playbook:
-    name: Test the action on apply playbook
+    name: Apply playbook action
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -18,9 +18,9 @@ jobs:
           clientId: ${{ secrets.STACKPULSE_CLIENT_ID }}
           clientSecret: ${{ secrets.STACKPULSE_CLIENT_SECRET }}
           yamlFile: test/playbook.yaml
-          
+
   apply-trigger:
-    name: Test the action on apply trigger
+    name: Apply trigger action
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
