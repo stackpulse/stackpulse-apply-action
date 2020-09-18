@@ -1,0 +1,27 @@
+apiVersion: stackpulse.io/v1
+kind: Playbook
+metadata:
+  name: GithubApplyActionTestPlaybook
+  description: asdf
+steps:
+  - name: stackpulse/curl
+    id: step1
+  - name: stackpulse/wget
+    id: step2
+    when: "true"
+    overrides:
+      aaa: "step"
+    env:
+      foo: bar
+      foo2: bar2
+      foo3: bar3
+    args:
+      - foo
+      - bar
+  - foreach:
+      in: "test"
+      key: foo
+      value: val
+      steps:
+        - name: stackpulse/curl
+          id: step1
