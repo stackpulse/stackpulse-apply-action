@@ -23,6 +23,6 @@ runs:
     SP_CLIENT_SECRET: ${{ inputs.clientSecret }}
   args:
     - "apply"
-    - ${{ format('/github/workspace/{0}', inputs.yamlType }}
+    - ${{ format('/github/workspace/{0}', inputs.yamlType) }}
     - "-f"
     - ${{ inputs.yamlFile }}
