@@ -14,6 +14,8 @@ After creating the client id and secret we recommend storing them as Github Secr
 
 ## Inputs
 
+The following inputs are briefly explained here are fully declared and documented in the [action.yaml](action.yaml):
+
 * `clientId` - Your StackPulse API Client ID
 
 * `clientSecret` - Your StackPulse API Client Secret
