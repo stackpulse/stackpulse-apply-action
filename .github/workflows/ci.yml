@@ -17,7 +17,7 @@ jobs:
         with:
           clientId: ${{ secrets.STACKPULSE_CLIENT_ID }}
           clientSecret: ${{ secrets.STACKPULSE_CLIENT_SECRET }}
-          yamlFile: /github/workspace/testdata/playbook.yaml
+          yamlFile: testdata/playbook.yaml
 
   apply-trigger:
     name: Apply trigger action
@@ -29,5 +29,5 @@ jobs:
         with:
           clientId: ${{ secrets.STACKPULSE_CLIENT_ID }}
           clientSecret: ${{ secrets.STACKPULSE_CLIENT_SECRET }}
-          yamlFile: /github/workspace/testdata/trigger.yaml
+          yamlFile: testdata/trigger.yaml
           yamlType: trigger
