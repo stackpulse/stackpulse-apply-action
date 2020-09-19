@@ -8,5 +8,5 @@ metadata:
 scenarios:
 - name: Scenario
   enabled: true
-  integration: integration_name
+  integration: GithubApplyActionTestIntegration
   when: '{{ and ( eq .Scope_Region "waka" ) ( ne .Provider_OrgName "paka" ) }}'
