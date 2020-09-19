@@ -20,7 +20,7 @@ The following inputs are briefly explained here are fully declared and documente
 
 * `clientSecret` [**Required**] - Your StackPulse API Client Secret
 
-* `yamlFile` [**Required**] - Path to the yaml file of the playbook or trigger to apply
+* `yamlFile` [**Required**] - Path to the yaml file of the playbook or trigger to apply, only relative path allowed
 
 * `yamlType` - Type of yaml resource to apply, 'playbook' or 'trigger' (default is 'playbook')
 
