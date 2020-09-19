@@ -16,11 +16,11 @@ After creating the client id and secret we recommend storing them as Github Secr
 
 The following inputs are briefly explained here are fully declared and documented in the [action.yaml](action.yaml):
 
-* `clientId` - Your StackPulse API Client ID
+* `clientId` [**Required**] - Your StackPulse API Client ID
 
-* `clientSecret` - Your StackPulse API Client Secret
+* `clientSecret` [**Required**] - Your StackPulse API Client Secret
 
-* `yamlFile` - Path to the yaml file of the playbook or trigger to apply
+* `yamlFile` [**Required**] - Path to the yaml file of the playbook or trigger to apply
 
 * `yamlType` - Type of yaml resource to apply, 'playbook' or 'trigger' (default is 'playbook')
 
