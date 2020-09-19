@@ -1,0 +1,12 @@
+apiVersion: stackpulse.io/v1
+kind: Trigger
+enabled: true
+playbook: GithubApplyActionTestPlaybook
+metadata:
+  name: GithubApplyActionTestTrigger
+  description: Trigger Description
+scenarios:
+- name: Scenario
+  enabled: true
+  integration: GithubApplyActionTestIntegration
+  when: '{{ and ( eq .Scope_Region "waka" ) ( ne .Provider_OrgName "paka" ) }}'
