@@ -2,7 +2,7 @@ apiVersion: stackpulse.io/v1
 kind: Playbook
 metadata:
   name: GithubApplyActionTestPlaybook
-  description: asdf
+  description: A simple test playbook for apply action CI
 steps:
   - name: stackpulse/curl
     id: step1
