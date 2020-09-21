@@ -2,7 +2,7 @@
 
 Github Action for applying automatic Incident Response playbooks and triggers with StackPulse.
 
-This action allows you to apply the Gitops paradigm to managing your StackPulse Incident Response Playbooks (and triggers), implementing the continuous integration and delivery to your _operations-as-code_ processes. 
+This action allows you to apply the GitOps paradigm to managing your StackPulse Incident Response Playbooks (and triggers), implementing the continuous integration and delivery to your _operations-as-code_ processes. 
 
 ## Configuration
 
