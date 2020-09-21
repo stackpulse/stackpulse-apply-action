@@ -3,7 +3,6 @@
 ![Release][badge_release]
 [![GitHub marketplace][badge_marketplace]][link_marketplace]
 [![Build][badge_ci]][link_actions]
-[![Build][badge_build]][link_hub]
 [![License][badge_license]][link_license]
 
 Github Action for applying automatic Incident Response playbooks and triggers with StackPulse.
@@ -75,8 +74,7 @@ We will update this sections with common issues or FAQs periodically.
 
 [badge_release]:https://img.shields.io/github/v/release/stackpulse/stackpulse-apply-action?include_prereleases&style=flat-square&maxAge=10
 [badge_marketplace]:https://img.shields.io/badge/marketplace-stackpulse--apply--action-green?logo=github&style=flat-square
-[badge_ci]:https://img.shields.io/github/workflow/status/stackpulse/stackpulse-apply-action/CI?style=flat-square&maxAge=10
-[badge_build]:https://img.shields.io/docker/cloud/build/stackpulse/stackpulse-apply-action.svg?style=flat-square&maxAge=30
+[badge_ci]:https://img.shields.io/github/workflow/status/stackpulse/stackpulse-apply-action/ci?style=flat-square&maxAge=10
 [badge_license]:https://img.shields.io/github/license/stackpulse/stackpulse-apply-action.svg?style=flat-square&maxAge=30
 [link_actions]:https://github.com/stackpulse/stackpulse-apply-action/actions
 [link_hub]:https://hub.docker.com/r/avtodev/markdown-lint/
