@@ -1,5 +1,10 @@
 # ![alt text](https://avatars3.githubusercontent.com/u/59413032?s=48 "OctoPulse") StackPulse Apply Action
 
+![Release][badge_release]
+[![GitHub marketplace][badge_marketplace]][link_marketplace]
+[![Build][badge_ci]][link_actions]
+[![License][badge_license]][link_license]
+
 Github Action for applying automatic Incident Response playbooks and triggers with StackPulse.
 
 This action allows you to apply the GitOps paradigm to managing your StackPulse Incident Response Playbooks (and triggers), implementing the continuous integration and delivery to your _operations-as-code_ processes.
@@ -66,3 +71,12 @@ jobs:
 Please feel free to open an issue for any problem you may encounter or improvement conceived while using this action.
 
 We will update this sections with common issues or FAQs periodically.
+
+[badge_release]:https://img.shields.io/github/v/release/stackpulse/stackpulse-apply-action?include_prereleases&style=flat-square&maxAge=10
+[badge_marketplace]:https://img.shields.io/badge/marketplace-stackpulse--apply--action-green?logo=github&style=flat-square
+[badge_ci]:https://img.shields.io/github/workflow/status/stackpulse/stackpulse-apply-action/ci?style=flat-square&maxAge=10
+[badge_license]:https://img.shields.io/github/license/stackpulse/stackpulse-apply-action.svg?style=flat-square&maxAge=30
+[link_actions]:https://github.com/stackpulse/stackpulse-apply-action/actions
+[link_hub]:https://hub.docker.com/r/avtodev/markdown-lint/
+[link_license]:https://github.com/stackpulse/stackpulse-apply-action/blob/master/LICENSE
+[link_marketplace]:https://github.com/marketplace/actions/stackpulse-apply-action
