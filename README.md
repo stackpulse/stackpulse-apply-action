@@ -2,11 +2,11 @@
 
 Github Action for applying automatic Incident Response playbooks and triggers with StackPulse.
 
-This action allows you to apply the GitOps paradigm to managing your StackPulse Incident Response Playbooks (and triggers), implementing the continuous integration and delivery to your _operations-as-code_ processes. 
+This action allows you to apply the GitOps paradigm to managing your StackPulse Incident Response Playbooks (and triggers), implementing the continuous integration and delivery to your _operations-as-code_ processes.
 
 ## Configuration
 
-In order to use this action you will need to have a [StackPulse](https://stackpulse.com) account and to create a StackPulse API keys. For those who are already subscribed to [StackPulse](https://stackpulse.com), the process is explained in detail in the [documentation](https://docs.stackpulse.io/cli/#generating-api-key-and-secret-for-usage-with-stackpulse-cli).
+In order to use this action you will need to have a [StackPulse](https://stackpulse.com) account and to create StackPulse API keys. For those who are already subscribed to [StackPulse](https://stackpulse.com), the process is explained in detail in the [documentation](https://docs.stackpulse.io/cli/#generating-api-key-and-secret-for-usage-with-stackpulse-cli).
 
 After creating the API keys we recommend storing them as [Github Secrets](https://docs.github.com/en/actions/reference/encrypted-secrets) in your organization or repository in order to use this action.
 

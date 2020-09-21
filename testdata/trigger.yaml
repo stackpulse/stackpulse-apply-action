@@ -9,4 +9,4 @@ scenarios:
 - name: Scenario
   enabled: true
   integration: GithubApplyActionTestIntegration
-  when: '{{ and ( eq .Scope_Region "waka" ) ( ne .Provider_OrgName "paka" ) }}'
+  when: '{{ and ( eq .Scope_Region "lorem" ) ( ne .Provider_OrgName "ipsum" ) }}'
