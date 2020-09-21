@@ -2,7 +2,7 @@ name: "StackPulse Apply Action"
 branding:
   icon: "upload-cloud"
   color: "green"
-description: "Apply StackPulse playbooks and triggers using a StackPulse CLI based Github action"
+description: "Apply automatic Incident Response playbooks with StackPulse"
 inputs:
     clientId:
       description: "Your StackPulse API Client ID"
