@@ -1,14 +1,14 @@
 # ![alt text](https://avatars3.githubusercontent.com/u/59413032?s=48 "OctoPulse") StackPulse Apply Action
 
-Apply StackPulse playbooks and triggers using a StackPulse CLI docker based Github action.
+Github Action for applying automatic Incident Response playbooks and triggers with StackPulse.
 
-This action allows you to keep your playbooks and triggers close to your app code and continuously apply them as part of your CI/CD pipeline.
+This action allows you to apply the GitOps paradigm to managing your StackPulse Incident Response Playbooks (and triggers), implementing the continuous integration and delivery to your _operations-as-code_ processes. 
 
 ## Configuration
 
-In order to use this action you will need to create a StackPulse API client id and secret. You can easily due this in the StackPulse platform and the process in explained in detail in the [docs](https://docs.stackpulse.io/cli/#generating-api-key-and-secret-for-usage-with-stackpulse-cli).
+In order to use this action you will need to have a [StackPulse](https://stackpulse.com) account and to create a StackPulse API keys. For those who are already subscribed to [StackPulse](https://stackpulse.com), the process is explained in detail in the [documentation](https://docs.stackpulse.io/cli/#generating-api-key-and-secret-for-usage-with-stackpulse-cli).
 
-After creating the client id and secret we recommend storing them as Github Secrets in your organization or repository so that you could continently and safely use them in the this action.
+After creating the API keys we recommend storing them as [Github Secrets](https://docs.github.com/en/actions/reference/encrypted-secrets) in your organization or repository in order to use this action.
 
 > In the examples below StackPulse API client id and secret are stored as `SP_CLIENT_ID` and `SP_CLIENT_SECRET` accordingly.
 
