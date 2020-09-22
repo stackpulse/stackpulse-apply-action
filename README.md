@@ -79,7 +79,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: stackpulse/stackpulse-apply-action@v0.1
-        name: Apply trigger
+        name: Apply Playbooks
         with:
           clientId: ${{ secrets.SP_CLIENT_ID }}
           clientSecret: ${{ secrets.SP_CLIENT_SECRET }}
