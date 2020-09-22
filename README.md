@@ -66,6 +66,26 @@ jobs:
           yamlType: trigger
 ```
 
+### Apply Multiple Playbooks or Triggers Using a Matrix
+
+```yaml
+jobs:
+  apply-playbook:
+    name: An example apply multiple playbooks job
+    strategy:
+      matrix:
+        playbooks: [playbook1.yaml, playbook2.yaml]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: stackpulse/stackpulse-apply-action@v0.1
+        name: Apply trigger
+        with:
+          clientId: ${{ secrets.SP_CLIENT_ID }}
+          clientSecret: ${{ secrets.SP_CLIENT_SECRET }}
+          yamlFile: path/to/your/${{ matrix.playbooks }}
+```
+
 ## Troubleshooting
 
 Please feel free to open an issue for any problem you may encounter or improvement conceived while using this action.
