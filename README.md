@@ -1,4 +1,4 @@
-# ![alt text](https://avatars3.githubusercontent.com/u/59413032?s=48 "OctoPulse") StackPulse Apply Playbook
+# StackPulse Apply Playbook
 
 ![Release][badge_release]
 [![GitHub marketplace][badge_marketplace]][link_marketplace]
