@@ -40,7 +40,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: stackpulse/stackpulse-apply-action@v0.1
+      - uses: stackpulse/stackpulse-apply-action@v0.2
         name: Apply playbook
         with:
           clientId: ${{ secrets.SP_CLIENT_ID }}
@@ -57,7 +57,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: stackpulse/stackpulse-apply-action@v0.1
+      - uses: stackpulse/stackpulse-apply-action@v0.2
         name: Apply trigger
         with:
           clientId: ${{ secrets.SP_CLIENT_ID }}
@@ -78,7 +78,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: stackpulse/stackpulse-apply-action@v0.1
+      - uses: stackpulse/stackpulse-apply-action@v0.2
         name: Apply Playbooks
         with:
           clientId: ${{ secrets.SP_CLIENT_ID }}
