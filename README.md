@@ -93,7 +93,7 @@ Please feel free to open an issue for any problem you may encounter or improveme
 We will update this sections with common issues or FAQs periodically.
 
 [badge_release]:https://img.shields.io/github/v/release/stackpulse/stackpulse-apply-playbook?include_prereleases&style=flat-square&maxAge=10
-[badge_marketplace]:https://img.shields.io/badge/marketplace-stackpulse--apply--action-green?logo=github&style=flat-square
+[badge_marketplace]:https://img.shields.io/badge/marketplace-stackpulse--apply--playbook-green?logo=github&style=flat-square
 [badge_ci]:https://img.shields.io/github/workflow/status/stackpulse/stackpulse-apply-playbook/ci?style=flat-square&maxAge=10
 [badge_license]:https://img.shields.io/github/license/stackpulse/stackpulse-apply-playbook.svg?style=flat-square&maxAge=30
 [link_actions]:https://github.com/stackpulse/stackpulse-apply-playbook/actions
