@@ -1,4 +1,4 @@
-# ![alt text](https://avatars3.githubusercontent.com/u/59413032?s=48 "OctoPulse") StackPulse Apply Playbook
+# StackPulse Apply Playbook
 
 ![Release][badge_release]
 [![GitHub marketplace][badge_marketplace]][link_marketplace]
@@ -40,7 +40,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: stackpulse/stackpulse-apply-action@v0.1
+      - uses: stackpulse/stackpulse-apply-playbook@v0.2
         name: Apply playbook
         with:
           clientId: ${{ secrets.SP_CLIENT_ID }}
@@ -57,7 +57,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: stackpulse/stackpulse-apply-action@v0.1
+      - uses: stackpulse/stackpulse-apply-playbook@v0.2
         name: Apply trigger
         with:
           clientId: ${{ secrets.SP_CLIENT_ID }}
@@ -78,7 +78,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: stackpulse/stackpulse-apply-action@v0.1
+      - uses: stackpulse/stackpulse-apply-playbook@v0.2
         name: Apply Playbooks
         with:
           clientId: ${{ secrets.SP_CLIENT_ID }}
@@ -92,11 +92,11 @@ Please feel free to open an issue for any problem you may encounter or improveme
 
 We will update this sections with common issues or FAQs periodically.
 
-[badge_release]:https://img.shields.io/github/v/release/stackpulse/stackpulse-apply-action?include_prereleases&style=flat-square&maxAge=10
-[badge_marketplace]:https://img.shields.io/badge/marketplace-stackpulse--apply--action-green?logo=github&style=flat-square
-[badge_ci]:https://img.shields.io/github/workflow/status/stackpulse/stackpulse-apply-action/ci?style=flat-square&maxAge=10
-[badge_license]:https://img.shields.io/github/license/stackpulse/stackpulse-apply-action.svg?style=flat-square&maxAge=30
-[link_actions]:https://github.com/stackpulse/stackpulse-apply-action/actions
+[badge_release]:https://img.shields.io/github/v/release/stackpulse/stackpulse-apply-playbook?include_prereleases&style=flat-square&maxAge=10
+[badge_marketplace]:https://img.shields.io/badge/marketplace-stackpulse--apply--playbook-green?logo=github&style=flat-square
+[badge_ci]:https://img.shields.io/github/workflow/status/stackpulse/stackpulse-apply-playbook/ci?style=flat-square&maxAge=10
+[badge_license]:https://img.shields.io/github/license/stackpulse/stackpulse-apply-playbook.svg?style=flat-square&maxAge=30
+[link_actions]:https://github.com/stackpulse/stackpulse-apply-playbook/actions
 [link_hub]:https://hub.docker.com/r/avtodev/markdown-lint/
-[link_license]:https://github.com/stackpulse/stackpulse-apply-action/blob/master/LICENSE
-[link_marketplace]:https://github.com/marketplace/actions/stackpulse-apply-action
+[link_license]:https://github.com/stackpulse/stackpulse-apply-playbook/blob/master/LICENSE
+[link_marketplace]:https://github.com/marketplace/actions/stackpulse-apply-playbook
