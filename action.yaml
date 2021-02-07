@@ -17,7 +17,7 @@ inputs:
         default: playbook
 runs:
   using: "docker"
-  image: "docker://us-docker.pkg.dev/stackpulse/public/cli"
+  image: "docker://us-docker.pkg.dev/stackpulse/public/cli:0.6.2"
   env:
     SP_CLIENT_ID: ${{ inputs.clientId }}
     SP_CLIENT_SECRET: ${{ inputs.clientSecret }}
