@@ -5,9 +5,8 @@
 [![Build][badge_ci]][link_actions]
 [![License][badge_license]][link_license]
 
-Github Action for applying automatic Incident Response playbooks and triggers with StackPulse.
+This GitHub action works with your existing GitOps workflow to apply StackPulse playbooks and trigger logic to your production environment.  Create code-based playbooks for incident analysis and remediation, then use triggers to automate and orchestrate playbook execution based on events in your environment. This helps you resolve production incidents faster and reduce manual toil.
 
-This action allows you to apply the GitOps paradigm to managing your StackPulse Incident Response Playbooks (and triggers), implementing the continuous integration and delivery to your _operations-as-code_ processes.
 
 ## Configuration
 
